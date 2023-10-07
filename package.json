@@ -1,0 +1,19 @@
+{
+  "name": "rey-dollar-monorepo",
+  "private": "true",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Eprince-hub/reys.git",
+  "author": "Victor Ejike Nwosu <ejikello123@yahoo.com>",
+  "license": "MIT",
+  "workspaces": {
+    "packages": [
+      "modules/*"
+    ]
+  },
+  "scripts": {
+    "api": "yarn workspace @testing/api",
+    "database": "yarn workspace @testing/database",
+    "repro": "yarn workspace @testing/ReproducerApp"
+  }
+}
