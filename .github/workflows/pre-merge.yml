@@ -31,15 +31,15 @@ jobs:
 
       - name: Yarn Install
         run: yarn install
-        working-directory: monorepo-error-repro-react-native
+        working-directory: /
 
       - name: Yarn Build Android Debug
         run: yarn react-native build-android
-        working-directory: monorepo-error-repro-react-native
+        working-directory: /
 
       - name: Yarn Build Android Release
         run: yarn react-native build-android --mode=Release
-        working-directory: monorepo-error-repro-react-native
+        working-directory: /
 
   test-ios:
     runs-on: macos-latest
@@ -54,12 +54,12 @@ jobs:
 
       - name: Yarn Install
         run: yarn install
-        working-directory: monorepo-error-repro-react-native
+        working-directory: /
 
       - name: pod install
         run: pod install
-        working-directory: monorepo-error-repro-react-native/ios
+        working-directory: //ios
 
       - name: Yarn Build iOS
         run: yarn react-native run-ios
-        working-directory: monorepo-error-repro-react-native
+        working-directory: /
